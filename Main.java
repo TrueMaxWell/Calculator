@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -21,7 +22,7 @@ public class Main {
                 System.out.println(Calc.calc(a, b, c));
                 console.close();
             }
-         else throw new IllegalArgumentException("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
+         else throw new InputMismatchException("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
     }
          else if (console.hasNextLine()) {
 
@@ -38,7 +39,7 @@ public class Main {
                     System.out.println(result);
                     console.close();
              }
-             else throw new IllegalArgumentException("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
+             else throw new InputMismatchException("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
         }
     }
 }
