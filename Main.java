@@ -21,7 +21,7 @@ public class Main {
                 System.out.println(Calc.calc(a, b, c));
                 console.close();
             }
-         else System.out.println("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
+         else throw new IllegalArgumentException("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
     }
          else if (console.hasNextLine()) {
 
@@ -38,7 +38,7 @@ public class Main {
                     System.out.println(result);
                     console.close();
              }
-             else System.out.println("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
+             else throw new IllegalArgumentException("Ошибка! Допускаются числа в диапазоне 1-100 включительно. Перезапустите программу");
         }
     }
 }

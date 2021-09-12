@@ -11,8 +11,9 @@ public class Calc {
             case "-" -> result = a - b;
             case "/" -> result = a / b;
             case "*" -> result = a * b;
-            default -> System.out.println("Ошибка! Программа работает только с одним из операторов (+, -, *, /) Перезапустите программу");
+            default -> throw new IllegalArgumentException("Не верный знак операции");
         }
+
         return result;
     }
 }
